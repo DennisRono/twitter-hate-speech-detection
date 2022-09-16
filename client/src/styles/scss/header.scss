@@ -1,9 +1,17 @@
 .header{
+    height: 54px;
+    border-bottom: 1px solid #525252;
     .header-container{
         margin: 0 10%;
         display: flex;
+        justify-content: space-between;
+        align-items: center;
+        align-content: center;
+        flex-direction: row;
+        padding-top: 5px;
         .header-brand{
             display: flex;
+            padding: 10px 0;
             .twitter-logo{
                 .twitterLogo{
                     fill: #1d9bf0;
@@ -11,7 +19,22 @@
             }
             .brand-texts{
                 h3{
-
+                    margin-left: 20px;
+                    font-weight: 700;
+                    line-height: 1;
+                }
+            }
+        }
+        .navigation{
+            margin-top: -5px;
+            .nav{
+                .nav-list{
+                    display: flex;
+                    .nav-link{
+                        .nav-red{
+                            padding: 10px 20px;
+                        }
+                    }
                 }
             }
         }

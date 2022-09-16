@@ -13,7 +13,7 @@ const Header = () => {
                 <Twitter className="twitterLogo" />
               </div>
               <div className="brand-texts">
-                <h3>Hate Speech Detection</h3>
+                <h3>Twitter Hate Speech Detection</h3>
               </div>
             </div>
             <div className="navigation">
