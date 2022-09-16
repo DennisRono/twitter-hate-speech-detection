@@ -1,6 +1,6 @@
 .header{
     height: 54px;
-    border-bottom: 1px solid #525252;
+    border-bottom: 1px solid #adadad;
     .header-container{
         margin: 0 10%;
         display: flex;
@@ -33,6 +33,8 @@
                     .nav-link{
                         .nav-red{
                             padding: 10px 20px;
+                            color: #272727;
+                            font-weight: 500;
                         }
                     }
                 }

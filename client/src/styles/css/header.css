@@ -1,6 +1,6 @@
 .header {
   height: 54px;
-  border-bottom: 1px solid #525252;
+  border-bottom: 1px solid #adadad;
 }
 .header .header-container {
   margin: 0 10%;
@@ -31,4 +31,6 @@
 }
 .header .header-container .navigation .nav .nav-list .nav-link .nav-red {
   padding: 10px 20px;
+  color: #272727;
+  font-weight: 500;
 }/*# sourceMappingURL=header.css.map */

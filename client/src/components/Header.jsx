@@ -20,16 +20,16 @@ const Header = () => {
               <nav className="nav">
                 <ul className="nav-list">
                   <li className="nav-link">
-                    <Link className="nav-red" to="">About</Link>
+                    <Link className="nav-red" to="/about">About</Link>
                   </li>
                   <li className="nav-link">
-                    <Link className="nav-red" to="">Documentation</Link>
+                    <Link className="nav-red" to="/docs">Documentation</Link>
                   </li>
                   <li className="nav-link">
-                    <Link className="nav-red" to="">History</Link>
+                    <Link className="nav-red" to="/history">History</Link>
                   </li>
                   <li className="nav-link">
-                    <Link className="nav-red" to="">Contact</Link>
+                    <Link className="nav-red" to="/contact">Contact</Link>
                   </li>
                 </ul>
               </nav>
