@@ -1,5 +1,5 @@
 import React, { Fragment } from 'react'
-import Twitter from '../assets/images/twitter-144.png'
+import Twitter from '../assets/images/twitter.png'
 
 const Header = () => {
   return (
@@ -13,6 +13,9 @@ const Header = () => {
               <div className="brand-texts">
                 <h3>Hate Speech Detection</h3>
               </div>
+            </div>
+            <div className="navigation">
+              
             </div>
           </div>
         </header>
