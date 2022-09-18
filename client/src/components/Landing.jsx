@@ -12,6 +12,7 @@ const Landing = () => {
                     <label htmlFor="tweet">Enter tweet</label><br />
                     <input type="text" className="landingtweetinput" />
                 </div>
+                <input type="submit" className="lsubmitBtn" />
             </form>
         </div>
     </Fragment>

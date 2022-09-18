@@ -1,3 +1,29 @@
 .landing {
   margin: 0 10%;
+  padding-top: 3rem;
+}
+.landing .landingtitle {
+  font-weight: 700;
+  margin: 1.5rem 0 0.5rem;
+  padding: 0.5em 0 0.25em;
+  line-height: 1;
+  font-size: 2.25rem;
+}
+.landing .landingtexts {
+  font-style: italic;
+}
+.landing .landingform {
+  display: flex;
+  margin: 20px 0;
+}
+.landing .landingform .form-group .landingtweetinput {
+  padding: 10px 20px;
+  border-radius: 6px;
+}
+.landing .landingform .lsubmitBtn {
+  padding: 10px 20px;
+  background-color: #1D9BF0;
+  border-radius: 6px;
+  margin-left: 20px;
+  border: none;
 }/*# sourceMappingURL=landing.css.map */

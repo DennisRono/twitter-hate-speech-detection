@@ -1,3 +1,31 @@
 .landing{
     margin: 0 10%;
+    padding-top: 3rem;
+    .landingtitle{
+        font-weight: 700;
+        margin: 1.5rem 0 0.5rem;
+        padding: 0.5em 0 0.25em;
+        line-height: 1;
+        font-size: 2.25rem;
+    }
+    .landingtexts{
+        font-style: italic;
+    }
+    .landingform{
+        display: flex;
+        margin: 20px 0;
+        .form-group{
+            .landingtweetinput{
+                padding: 10px 20px;
+                border-radius: 6px;
+            }
+        }
+        .lsubmitBtn{
+            padding: 10px 20px;
+            background-color: #1D9BF0;
+            border-radius: 6px;
+            margin-left: 20px;
+            border: none;
+        }
+    }
 }
