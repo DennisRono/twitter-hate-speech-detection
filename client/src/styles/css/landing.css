@@ -16,10 +16,11 @@
   display: flex;
   align-items: flex-end;
   margin: 20px 0;
-  width: 100%;
+  width: 80%;
 }
 .landing .landingform .form-group {
   width: 50%;
+  margin-right: 20px;
 }
 .landing .landingform .form-group .landingtweetinput {
   padding: 20px 10px;
@@ -31,9 +32,11 @@
   width: calc(100% - 20px);
 }
 .landing .landingform .lsubmitBtn {
-  width: 20%;
   padding: 20px !important;
   background-color: #1D9BF0;
   border-radius: 6px;
   border: none;
+  cursor: pointer;
+  color: #e5e3ff;
+  font-weight: 700;
 }/*# sourceMappingURL=landing.css.map */
