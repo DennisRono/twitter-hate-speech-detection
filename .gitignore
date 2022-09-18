@@ -27,4 +27,4 @@ yarn-error.log*
 
 
 # auths
-backend/credentials.py
+backend/credentials.pycron-logs.json
