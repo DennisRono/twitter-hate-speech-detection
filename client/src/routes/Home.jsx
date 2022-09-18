@@ -3,6 +3,7 @@ import Header from '../components/Header'
 import { Helmet } from "react-helmet"
 import Footer from '../components/Footer'
 import Breadcrumb from '../components/Breadcrumb'
+import Landing from '../components/Landing'
 
 const Home = () => {
   return (
@@ -13,6 +14,7 @@ const Home = () => {
         </Helmet>
         <Header/>
         <Breadcrumb/>
+        <Landing/>
         <Footer/>
     </Fragment>
   )
