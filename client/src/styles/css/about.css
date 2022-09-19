@@ -1,0 +1,14 @@
+.about {
+  margin: 0 10%;
+  padding-top: 1rem;
+}
+.about .about-title {
+  font-weight: 700;
+  margin: 1.5rem 0 0.5rem;
+  padding: 0.5em 0 0.25em;
+  line-height: 1;
+}
+.about .creator a .sendicon {
+  height: 15px;
+  width: 15px;
+}/*# sourceMappingURL=about.css.map */
