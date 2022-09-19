@@ -10,10 +10,10 @@ const Header = () => {
           <div className="header-container">
             <div className="header-brand">
               <div className="twitter-logo">
-                <Twitter className="twitterLogo" />
+              <Link to="/"><Twitter className="twitterLogo" /></Link>
               </div>
               <div className="brand-texts">
-                <h3>Twitter Hate Speech Detection</h3>
+                <Link to="/"><h3>Twitter Hate Speech Detection</h3></Link>
               </div>
             </div>
             <div className="navigation">
@@ -21,12 +21,6 @@ const Header = () => {
                 <ul className="nav-list">
                   <li className="nav-link">
                     <Link className="nav-red" to="/about">About</Link>
-                  </li>
-                  <li className="nav-link">
-                    <Link className="nav-red" to="/docs">Documentation</Link>
-                  </li>
-                  <li className="nav-link">
-                    <Link className="nav-red" to="/history">History</Link>
                   </li>
                   <li className="nav-link">
                     <Link className="nav-red" to="/contact">Contact</Link>
