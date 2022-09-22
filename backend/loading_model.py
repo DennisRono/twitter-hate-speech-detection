@@ -1,5 +1,6 @@
-import joblib
+import pickle
 import numpy as np
 
-model = joblib.load("models/winery.pkl")
-print(model(np.random.random((1,5))))
+# Loading model to compare the results
+model = pickle.load(open('models/winery.pkl','rb'))
+print(model.predict([[1.8]]))
