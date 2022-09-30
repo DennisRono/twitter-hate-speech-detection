@@ -1,6 +1,16 @@
 /*=-=-=-=-=-=auth page=-=-=-=-=-=-=*/
+.authentification{
+    a{
+        .getbackHome{
+            height: 25px;
+            width: 25px;
+            margin: 3rem 4rem;
+        }
+    }
+}
 .contact{
     margin: 5% 30%;
+    margin-top: 0 !important;
     @media(max-width: 480px){
         margin: 10px;
     }
@@ -32,7 +42,7 @@
             margin: 0 auto;
         }
         .contFormSec{
-            margin-top: 3rem;
+            margin-top: 1rem;
             margin-left: 25px;
             @media(max-width: 480px){
                 margin: 0 5px;

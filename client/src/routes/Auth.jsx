@@ -2,6 +2,7 @@ import React, { Fragment, useState } from 'react'
 import '../styles/css/auth.css'
 import { useNavigate } from "react-router-dom"
 import useLocalStorage from 'use-local-storage'
+import {ReactComponent as Home} from '../assets/svg/home.svg'
 import { api } from '../api/axios'
 import { Link } from "react-router-dom"
 import { setJwtToken, setRefreshToken } from '../includes/session'
@@ -67,6 +68,9 @@ const Auth = () => {
   return (
     <Fragment>
         <div className="authentification">
+            <Link to="/">
+                <Home className="getbackHome"/>            
+            </Link>
           <section className="contact">
             <div className="contact-wrapper">
                 <div className="contFormSec">
