@@ -6,13 +6,15 @@ import {ReactComponent as Home} from '../assets/svg/home.svg'
 import { api } from '../api/axios'
 import { Link } from "react-router-dom"
 import { setJwtToken, setRefreshToken } from '../includes/session'
+import { useEffect } from 'react'
 
 
 const Auth = () => {
+    const [active, setActive] = useLocalStorage('activity', 'login')
     const location = useLocation()
-    const initActivity = location.state
-    console.log(initActivity);
-    const [active, setActive] = useLocalStorage('activity', initActivity)
+    useEffect(()=>{
+        setActive(location.state)
+    }, [])
     const [register, setRegister] = useState({
         fname: '',
         lname: '',
@@ -34,11 +36,6 @@ const Auth = () => {
             fname: '',
             lname: '',
             email: '',
-            phone: '',
-            school: '',
-            department: '',
-            semester: '',
-            year: '',
             password: '',
             cpassword: ''
         })
