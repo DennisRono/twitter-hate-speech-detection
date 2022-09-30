@@ -1,6 +1,6 @@
 import React, { Fragment, useState } from 'react'
 import '../styles/css/auth.css'
-import { useNavigate } from "react-router-dom"
+import { useNavigate, useLocation } from "react-router-dom"
 import useLocalStorage from 'use-local-storage'
 import {ReactComponent as Home} from '../assets/svg/home.svg'
 import { api } from '../api/axios'
@@ -9,7 +9,10 @@ import { setJwtToken, setRefreshToken } from '../includes/session'
 
 
 const Auth = () => {
-    const [active, setActive] = useLocalStorage('activity', 'login')
+    const location = useLocation()
+    const initActivity = location.state
+    console.log(initActivity);
+    const [active, setActive] = useLocalStorage('activity', initActivity)
     const [register, setRegister] = useState({
         fname: '',
         lname: '',

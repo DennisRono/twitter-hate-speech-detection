@@ -2,7 +2,6 @@ import React, { Fragment } from 'react'
 import '../styles/css/header.css'
 import {ReactComponent as Twitter} from '../assets/svg/twitter.svg'
 import { Link } from 'react-router-dom'
-import useLocalStorage from 'use-local-storage'
 
 const Header = () => {
   return (
@@ -27,10 +26,10 @@ const Header = () => {
                     <Link className="nav-red" to="/contact">Contact</Link>
                   </li>
                   <li className="nav-link">
-                    <Link className="nav-red auth-btn-login" to="/auth">Login</Link>
+                    <Link className="nav-red auth-btn-login" state="login" to="/auth">Login</Link>
                   </li>
                   <li className="nav-link">
-                    <Link className="nav-red auth-btn-register" to="/auth">Register</Link>
+                    <Link className="nav-red auth-btn-register" state="register" to="/auth">Register</Link>
                   </li>
                 </ul>
               </nav>
