@@ -2,6 +2,7 @@ import React, { Fragment } from 'react'
 import '../styles/css/header.css'
 import {ReactComponent as Twitter} from '../assets/svg/twitter.svg'
 import { Link } from 'react-router-dom'
+import useLocalStorage from 'use-local-storage'
 
 const Header = () => {
   return (

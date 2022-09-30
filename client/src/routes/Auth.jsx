@@ -13,17 +13,12 @@ const Auth = () => {
     const [register, setRegister] = useState({
         fname: '',
         lname: '',
-        regno: '',
-        phone: '',
-        school: '',
-        department: '',
-        semester: '',
-        year: '',
+        email: '',
         password: '',
         cpassword: ''
     })
     const [login, setLogin] = useState({
-        regno: '',
+        email: '',
         password: ''
     })
 
@@ -35,7 +30,7 @@ const Auth = () => {
         setRegister({
             fname: '',
             lname: '',
-            regno: '',
+            email: '',
             phone: '',
             school: '',
             department: '',
@@ -52,7 +47,7 @@ const Auth = () => {
         let res = await api('POST', 'auth/login', login)
         setResponse(res)
         setLogin({
-            regno: '',
+            email: '',
             password: ''
         })
 
@@ -99,52 +94,10 @@ const Auth = () => {
                             </div>
                             <div className="user-input-wrp">
                                 <br/>
-                                <input id="id-input" type="text" className="inputText" name="regno" value={register.regno} onChange={(e)=>{setRegister({ ...register, [e.target.name]: e.target.value })}}/>
-                                <span className="floating-label">Registration Number <span style={{color: "red"}}>*</span></span>
+                                <input id="id-input" type="text" className="inputText" name="email" value={register.email} onChange={(e)=>{setRegister({ ...register, [e.target.name]: e.target.value })}}/>
+                                <span className="floating-label">Email address <span style={{color: "red"}}>*</span></span>
                             </div>
                             <span id="id-err"></span>
-                            <div className="user-input-wrp">
-                                <br/>
-                                <input id="id-input" type="number" className="inputText" name="phone" value={register.phone} onChange={(e)=>{setRegister({ ...register, [e.target.name]: e.target.value })}}/>
-                                <span className="floating-label">Phone Number <span style={{color: "red"}}>*</span></span>
-                            </div>
-                            <span id="id-err"></span>
-                            <div className="cont-gr-flex">
-                                <div className="contPut">
-                                    <div className="user-input-wrp">
-                                        <br/>
-                                        <input id="id-input" type="text" className="inputText" name="school" value={register.school} onChange={(e)=>{setRegister({ ...register, [e.target.name]: e.target.value })}}/>
-                                        <span className="floating-label">School <span style={{color: "red"}}>*</span></span>
-                                    </div>
-                                    <span id="id-err"></span>
-                                </div>
-                                <div className="contPut">
-                                    <div className="user-input-wrp">
-                                        <br/>
-                                        <input id="id-input" type="text" className="inputText" name="department" value={register.department} onChange={(e)=>{setRegister({ ...register, [e.target.name]: e.target.value })}}/>
-                                        <span className="floating-label">Department <span style={{color: "red"}}>*</span></span>
-                                    </div>
-                                    <span id="id-err"></span>
-                                </div>
-                            </div>
-                            <div className="cont-gr-flex">
-                                <div className="contPut">
-                                    <div className="user-input-wrp">
-                                        <br/>
-                                        <input id="id-input" type="text" className="inputText" name="semester" value={register.semester} onChange={(e)=>{setRegister({ ...register, [e.target.name]: e.target.value })}}/>
-                                        <span className="floating-label">Semester <span style={{color: "red"}}>*</span></span>
-                                    </div>
-                                    <span id="id-err"></span>
-                                </div>
-                                <div className="contPut">
-                                    <div className="user-input-wrp">
-                                        <br/>
-                                        <input id="id-input" type="number" className="inputText" name="year" value={register.year} onChange={(e)=>{setRegister({ ...register, [e.target.name]: e.target.value })}}/>
-                                        <span className="floating-label">Year of study <span style={{color: "red"}}>*</span></span>
-                                    </div>
-                                    <span id="id-err"></span>
-                                </div>
-                            </div>
                             <div className="user-input-wrp">
                                 <br/>
                                 <input id="id-input" type="password" className="inputText" name="password" value={register.password} onChange={(e)=>{setRegister({ ...register, [e.target.name]: e.target.value })}}/>
@@ -170,8 +123,8 @@ const Auth = () => {
                         <div className="cont-group">
                             <div className="user-input-wrp">
                                 <br/>
-                                <input id="id-input" type="text" className="inputText" name="regno" value={login.regno} onChange={(e)=>{setLogin({ ...login, [e.target.name]: e.target.value })}}/>
-                                <span className="floating-label">Registration Number <span style={{color: "red"}}>*</span></span>
+                                <input id="id-input" type="text" className="inputText" name="email" value={login.email} onChange={(e)=>{setLogin({ ...login, [e.target.name]: e.target.value })}}/>
+                                <span className="floating-label">Email Address <span style={{color: "red"}}>*</span></span>
                             </div>
                             <span id="id-err"></span>
                             <div className="user-input-wrp">
