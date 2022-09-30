@@ -70,7 +70,7 @@ const Auth = () => {
           <section className="contact">
             <div className="contact-wrapper">
                 <div className="contFormSec">
-                    <h2 className="contact-header">Fees Payment System</h2>
+                    <h2 className="contact-header">Hate Speech Detection</h2>
                     {(response.message!=='')?<p className={(response.type==='success')?"formNotifySucc":"formNotify"}>{response.message}</p>:null}
                     <form action="contact.php" method="POST" className={(active==='register')?"registration-form":"hide-activity"} onSubmit={(e)=>registerSubmit(e)}>
                         <h3>Register</h3>

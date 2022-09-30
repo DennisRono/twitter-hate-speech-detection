@@ -7,6 +7,7 @@ import {
 import Home from './routes/Home'
 import Contact from './routes/Contact'
 import About from './routes/About'
+import Auth from './routes/Auth'
 import NotFound from './routes/NotFound'
 
 const App = () => {
@@ -17,6 +18,7 @@ const App = () => {
             <Route path="/" element={<Home />} />
             <Route path="/contact" element={<Contact />} />
             <Route path="/about" element={<About />} />
+            <Route path="/auth" element={<Auth />} />
             <Route path="*" element={<NotFound />} />
           </Routes>
         </BrowserRouter>

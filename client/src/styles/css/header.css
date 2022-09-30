@@ -34,4 +34,25 @@
   padding: 10px 20px;
   color: #272727;
   font-weight: 500;
+}
+.header .header-container .navigation .nav .nav-list .nav-link .auth-btn-login {
+  background: #2ac6ff;
+  border-radius: 4px;
+  padding: 9px 23px 11px;
+  font-size: 16px;
+  letter-spacing: 1.6px;
+  color: rgb(255, 255, 255);
+  text-transform: uppercase;
+  font-weight: 500;
+  margin-right: 20px;
+}
+.header .header-container .navigation .nav .nav-list .nav-link .auth-btn-register {
+  border: 1px solid #2ac6ff;
+  border-radius: 4px;
+  padding: 5px 16px 7px;
+  font-size: 16px;
+  letter-spacing: 1.6px;
+  color: #2ac6ff;
+  text-transform: uppercase;
+  font-weight: 500;
 }/*# sourceMappingURL=header.css.map */
